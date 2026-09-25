@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Palette Pop!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <p class="eyebrow">COLOR PLAYGROUND</p>
+            <h1>Palette Pop!</h1>
+            <p class="intro">
+                Create your own colorful palette and click a color
+                to make it your background.
+            </p>
+        </header>
+
+        <section class="controls">
+
+            <label for="colorCount">
+                How many colors do you want?
+            </label>
+
+            <div class="input-area">
+                <input
+                    type="number"
+                    id="colorCount"
+                    min="2"
+                    max="10"
+                    value="5"
+                >
+
+                <button id="generateButton">
+                    Generate Palette
+                </button>
+            </div>
+
+        </section>
+
+        <section class="palette-section">
+
+            <h2>Your Palette</h2>
+
+            <div id="palette" class="palette">
+                <!-- JavaScript will add colors here -->
+            </div>
+
+        </section>
+
+        <section class="message-box">
+            <p id="message">
+                Choose a color to change the background!
+            </p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

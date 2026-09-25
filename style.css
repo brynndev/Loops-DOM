@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff5f9;
+    color: #4a2635;
+
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.eyebrow {
+    color: #d85b8c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+    color: #c94f80;
+}
+
+.intro {
+    max-width: 550px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.controls {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(80, 30, 50, 0.08);
+    margin-bottom: 35px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.input-area {
+    display: flex;
+    gap: 12px;
+}
+
+input {
+    width: 100px;
+    padding: 13px;
+    border: 2px solid #f2b5cc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d85b8c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.palette-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(80, 30, 50, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+    color: #c94f80;
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.color-card {
+    min-height: 160px;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-card:hover {
+    transform: scale(1.04);
+}
+
+.color-code {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.message-box {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
